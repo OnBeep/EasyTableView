@@ -365,6 +365,7 @@
 		
 		cell.contentView.frame = cell.bounds;
 		cell.selectionStyle = UITableViewCellSelectionStyleNone;
+		cell.backgroundColor = [UIColor clearColor];
 		
 		// Add a view to the cell's content view that is rotated to compensate for the table view rotation
 		CGRect viewRect;
