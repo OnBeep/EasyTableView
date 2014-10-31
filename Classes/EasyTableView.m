@@ -407,9 +407,14 @@
 	if ([delegate respondsToSelector:@selector(numberOfCellsForEasyTableView:inSection:)]) {
 		numOfItems = [delegate numberOfCellsForEasyTableView:self inSection:section];
 		
+		// BTG: Removed because it was interfering w/ the user tray updates (10/13/14)
+		/*
+		
 		// Animate any changes in the number of items
 		[tableView beginUpdates];
 		[tableView endUpdates];
+		
+		*/
 	}
 	
     return numOfItems;
