@@ -200,6 +200,11 @@
 	}
 }
 
+- (void)deselectRowAtIndexPath:(NSIndexPath *)indexPath animated:(BOOL)animated {
+    _selectedIndexPath = nil;
+    [self.tableView deselectRowAtIndexPath:indexPath animated:animated];
+}
+
 #pragma mark -
 #pragma mark Multiple Sections
 
